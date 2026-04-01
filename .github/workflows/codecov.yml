@@ -27,6 +27,6 @@ jobs:
       - name: Generate coverage report
         run: pytest --cov=./ --cov-report=xml -vv -rA
       - name: Upload coverage report to CodeCov
-        uses: codecov/codecov-action@v5
+        uses: codecov/codecov-action@v6
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
